@@ -1,2 +1,2 @@
 # skole-bot
-Discord-bot til skolerelateret ting
+Discord bot til skolerelateret ting. Laver README senere
