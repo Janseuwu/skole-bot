@@ -6,7 +6,6 @@ from selvbet_schedule import *
 from absence import *
 
 dotenv.load_dotenv()
-
 bot = lightbulb.BotApp(
     os.environ["BOT_TOKEN"],
     intents=hikari.Intents.ALL,
