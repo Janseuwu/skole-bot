@@ -20,6 +20,5 @@ Koer botten med `python3 bot.py`
 	- Udregne dit fravaer, samt udregne hvor meget fravaer du vil have hvis du skipper nogle timer
 ## TODO
 	- Tilfoeje en funktion til at specificere uge 
-	- Tilfoeje en 'help' command
 
-For yderligere information om bottens funktionalitet, brug `/help` eller `+help`. (ikke implemeneteret endnu)
+For yderligere information om bottens funktionalitet, brug `+help`
