@@ -22,4 +22,4 @@ Koer botten med `python3 bot.py`
 	- Tilfoeje en funktion til at specificere uge 
 	- Tilfoeje en 'help' command
 
-For yderligere information om bottens funktionalitet, brug `/help` eller `+help`.
+For yderligere information om bottens funktionalitet, brug `/help` eller `+help`. (ikke implemeneteret endnu)
