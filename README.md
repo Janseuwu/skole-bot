@@ -16,10 +16,10 @@ Installer `requirements.txt` med `pip install -r requirements.txt`
 Koer botten med `python3 bot.py`
 
 ## Features
-	- Sende en besked, der indeholder skemaet for hele ugen, for den givne klasse
+	- Sende en besked, der indeholder skemaet for den givne uge(mega scuffed), for den givne klasse
 	- Udregne dit fravaer, samt udregne hvor meget fravaer du vil have hvis du skipper nogle timer
 ## TODO
-	- Tilfoeje en funktion til at specificere uge til skemaet(fucking lort)
+	- Lav botten ikke lort
 	- Lav ordentlig help funktion
 
 For yderligere information om bottens funktionalitet, brug `+help`

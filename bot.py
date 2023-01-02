@@ -28,12 +28,13 @@ async def ping(ctx: lightbulb.Context) -> None:
     await ctx.respond(f"Pong! Latency: {bot.heartbeat_latency*1000:.2f}ms")
 
 @bot.command
-@lightbulb.option("target_class", description="specifies a target for the schedule")
+@lightbulb.option("target_class", description="specifies a target class for the schedule")
+@lightbulb.option("target_week", description="specifies a target week for the schedule")
 @lightbulb.command("schedule", description="spits out selvbetjening schedule")
 @lightbulb.implements(lightbulb.PrefixCommand, lightbulb.SlashCommand)
 async def schedule(ctx: lightbulb.Context) -> None:
     await ctx.respond("Fetching schedule...")
-    get_schedule(str(ctx.options.target_class)) # fetches schedule and writes it to file
+    get_schedule(str(ctx.options.target_class), str(ctx.options.target_week)) # fetches schedule and writes it to file
     with open("schedule.txt", "r") as f:
         contents = f.read()
         await ctx.respond(contents)
