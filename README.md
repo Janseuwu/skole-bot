@@ -24,5 +24,8 @@ Koer botten med `python3 bot.py`
 	- Maaske bare en LILLE smule dokumentation (jeg kan ikke engang selv finde rundt i det)
 	- Lav ordentlig help funktion (det er bare hikari indbygget, der staar ikke noget og det er lort)
 	- Lav botten ikke lort (botten er lort)
+	
+## Hvordan botten fungerer
+eb
 
 For yderligere information om bottens funktionalitet, brug `+help`
