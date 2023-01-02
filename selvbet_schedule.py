@@ -13,7 +13,7 @@ def get_schedule(targetClass, targetWeek):
     # set options headless
     options = Options()
     options.binary_location = "/usr/bin/firefox"
-    options.headless = False
+    options.headless = True
 
     # firefox driver
     driver = webdriver.Firefox(options=options, executable_path="/home/janseuwu/Documents/geckodriver") # laptop path
