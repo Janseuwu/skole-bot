@@ -19,7 +19,10 @@ Koer botten med `python3 bot.py`
 	- Sende en besked, der indeholder skemaet for den givne uge(mega scuffed), for den givne klasse
 	- Udregne dit fravaer, samt udregne hvor meget fravaer du vil have hvis du skipper nogle timer
 ## TODO
-	- Lav botten ikke lort
+	- Tweak lidt paa selve scraping-delen (den er lort)
+	- Haandter failcases (intet er haandteret, alt er lort)
+	- Maaske bare en LILLE smule dokumentation (jeg kan ikke engang selv finde rundt i det)
 	- Lav ordentlig help funktion
+	- Lav botten ikke lort
 
 For yderligere information om bottens funktionalitet, brug `+help`
