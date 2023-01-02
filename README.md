@@ -20,6 +20,7 @@ Koer botten med `python3 bot.py`
 	- Udregne dit fravaer, samt udregne hvor meget fravaer du vil have hvis du skipper nogle timer
 ## TODO
 	- Tweak lidt paa selve scraping-delen (den er lort)
+	- Haandter failcases (intet er haandteret, alt er lort)
 	- Maaske bare en LILLE smule dokumentation (jeg kan ikke engang selv finde rundt i det)
 	- Lav ordentlig help funktion
 	- Lav botten ikke lort
