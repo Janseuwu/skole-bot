@@ -9,7 +9,7 @@ import time
 
 def get_schedule(targetClass, targetWeek):
     f = open('schedule.txt', 'w')
-
+    f.write("")
     # set options headless
     options = Options()
     options.binary_location = "/usr/bin/firefox"
@@ -34,11 +34,17 @@ def get_schedule(targetClass, targetWeek):
     login_button.click()
 
     # specify class 
-    searchBar = driver.find_element(By.ID, 'SearchText')
-    searchBar.clear()
-    searchBar.send_keys(targetClass)  
-    li = driver.find_elements(By.XPATH, "//ul[contains(@id, 'SearchAutoCompleteExtender_completionListElem')]/li") 
-    li[0].click()
+    try:
+        searchBar = driver.find_element(By.ID, 'SearchText')
+        searchBar.clear()
+        searchBar.send_keys(targetClass)  
+        li = driver.find_elements(By.XPATH, "//ul[contains(@id, 'SearchAutoCompleteExtender_completionListElem')]/li") 
+        li[0].click()
+    except:
+        print("specify class error")
+        f.write("Not a valid class/person")
+        f.close()
+        return
 
     # specify week
     elem = driver.find_element(By.ID, "PeriodText")
@@ -46,7 +52,13 @@ def get_schedule(targetClass, targetWeek):
     s = s[-2:]
     s = s.replace(" ", "")
     currentWeek = int(s)
-    clickAmount = int(targetWeek) - currentWeek
+    targetWeek = int(targetWeek)
+    clickAmount = targetWeek - currentWeek
+    if targetWeek > 52 or targetWeek < currentWeek:
+        f.write("Not a valid week bruh")
+        f.close()
+        print("specify week error")
+        return
     for r in range(clickAmount):
         nextWeek = driver.find_element(By.ID, "PeriodNextButton")
         nextWeek.click()
