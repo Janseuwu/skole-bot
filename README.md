@@ -16,7 +16,7 @@ Installer `requirements.txt` med `pip install -r requirements.txt`
 Koer botten med `python3 bot.py`
 
 ## Features
-	- Sende en besked, der indeholder skemaet for den givne uge(mega scuffed), for den givne klasse
+	- Sende en besked, der indeholder skemaet for den givne uge(mega scuffed), for den givne klasse eller det givne navn
 	- Udregne dit fravaer, samt udregne hvor meget fravaer du vil have hvis du skipper nogle timer
 ## TODO
 	- Tweak lidt paa selve scraping-delen (den er lort)
