@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.keys import Keys
 from dotenv import load_dotenv
 import os
 from prettify_schedule import *
@@ -35,11 +36,16 @@ def get_schedule(targetClass, targetWeek):
 
     # specify class 
     try:
+        targetClass = targetClass.strip()
         searchBar = driver.find_element(By.ID, 'SearchText')
         searchBar.clear()
         searchBar.send_keys(targetClass)  
-        li = driver.find_elements(By.XPATH, "//ul[contains(@id, 'SearchAutoCompleteExtender_completionListElem')]/li") 
-        li[0].click()
+        if " " in targetClass:
+            searchBar.send_keys(Keys.RETURN)
+        else:
+            li = driver.find_elements(By.XPATH, "//ul[contains(@id, 'SearchAutoCompleteExtender_completionListElem')]/li") 
+            li[0].click()
+
     except:
         print("specify class error")
         f.write("Not a valid class/person")
