@@ -1,6 +1,5 @@
 # skole-bot
 Dette repo indeholder en discord bot, der kan spytte forskellige selvbetjening-data ud. Listen med kommandoer faar du fra botten selv med `/commands` eller `+commands`. Botten er skrevet i python, med hikari-lightbulb.
-
 ## Installation
 Clone repositoriet med: <br>
 ```
